@@ -44,8 +44,8 @@ dav1d is a new AV1 cross-platform decoder, open-source, and focused on speed and
   s.prepare_command = <<-CMD
                       sed -i '' 's/\\"common.h\\"/\\"dav1d\\/common.h\\"/g' './dav1d/src/fg_apply_tmpl.c'
                       cp './dav1d/include/dav1d/version.h.in' './dav1d/include/dav1d/version.h'
-                      sed -i '' 's/\\@DAV1D_API_VERSION_MAJOR@/5/g' './dav1d/include/dav1d/version.h'
-                      sed -i '' 's/\\@DAV1D_API_VERSION_MINOR@/1/g' './dav1d/include/dav1d/version.h'
+                      sed -i '' 's/\\@DAV1D_API_VERSION_MAJOR@/6/g' './dav1d/include/dav1d/version.h'
+                      sed -i '' 's/\\@DAV1D_API_VERSION_MINOR@/6/g' './dav1d/include/dav1d/version.h'
                       sed -i '' 's/\\@DAV1D_API_VERSION_PATCH@/0/g' './dav1d/include/dav1d/version.h'
                       CMD
   s.preserve_paths = 'dav1d', 'generate'
